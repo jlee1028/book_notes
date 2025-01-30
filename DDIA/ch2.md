@@ -237,10 +237,10 @@ MapReduce for read-only queries across many documents.
 
 Example with MongoDB:
 
-<img src="&#39;media/ch2&#39;/media/image1.png"
+<img src="media/ch2/media/image1.png"
 style="width:6.70902in;height:6.61399in" />
 
-<img src="&#39;media/ch2&#39;/media/image2.png"
+<img src="media/ch2/media/image2.png"
 style="width:6.85417in;height:4.46589in" />
 
 **Graph-Like Data Models**
@@ -302,7 +302,7 @@ Each edge consists of:
 
 -   A collection of properties (key-value pairs)”
 
-<img src="&#39;media/ch2&#39;/media/image3.png"
+<img src="media/ch2/media/image3.png"
 style="width:6.66267in;height:3.28441in" />
 
 Important aspects of the graph model:
@@ -327,10 +327,10 @@ of the query can use those names to create edges between the vertices,
 using an arrow notation: (Idaho) -\[:WITHIN\]-&gt; (USA) creates an edge
 labeled WITHIN, with Idaho as the tail node and USA as the head node.”
 
-<img src="&#39;media/ch2&#39;/media/image4.png"
+<img src="media/ch2/media/image4.png"
 style="width:6.45213in;height:1.92777in" />
 
-<img src="&#39;media/ch2&#39;/media/image5.png"
+<img src="media/ch2/media/image5.png"
 style="width:6.43262in;height:3.74295in" />
 
 **Graph Queries in SQL**
