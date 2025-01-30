@@ -13,21 +13,21 @@ os.chdir(path)
 
 print(f"Current directory after cd DDIA: {os.getcwd()}")
 
-files = os.listdir()
+files = os.listdir('docx_files')
 
 docx_files = []
 for file in files:
     if file.endswith('.docx'):
         docx_files.append(file[:-5])
 
-print(f'docs files: {docx_files}')
+print(f'docx files: {docx_files}')
 
-for filename in docx_files:
+for file in docx_files:
     command = ['pandoc',
     '-t', 'markdown_strict',
-    f"--extract-media='media/{filename}'",
-    f'{filename}.docx',
-    '-o', f'{filename}.md']
+    f"--extract-media='media/{file}'",
+    f'docx_files/{file}.docx',
+    '-o', f'{file}.md']
 
     print(f'command: {command}')
 
