@@ -25,7 +25,7 @@ print(f'docx files: {docx_files}')
 for file in docx_files:
     command = ['pandoc',
     '-t', 'markdown_strict',
-    f"--extract-media='media/{file}'",
+    f"--extract-media=media/{file}",
     f'docx_files/{file}.docx',
     '-o', f'{file}.md']
 
