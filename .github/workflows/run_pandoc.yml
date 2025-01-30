@@ -1,0 +1,32 @@
+name: Convert DOCX to Markdown
+
+on:
+  push:
+    branches:
+      - development
+  pull_request:
+    branches:
+      - development
+
+jobs:
+  convert-docx:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc  # Install Pandoc
+          pip install --upgrade pip
+
+      - name: Run the script
+        run: |
+          python convert_docx.py ./DDIA
