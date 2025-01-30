@@ -205,7 +205,7 @@ awaiting service”
 Response time can vary for the same request, so it is best to think of
 it in terms of distributions. There are occasionally outliers
 
-<img src="&#39;media/ch1&#39;/media/image1.png"
+<img src="media/ch1/media/image1.png"
 style="width:6.64362in;height:2.51593in" />
 
 **Approaches for Coping with Load**

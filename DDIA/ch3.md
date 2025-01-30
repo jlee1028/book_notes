@@ -201,7 +201,7 @@ one page at a time
 The number of references to child pages in one page of the B-tree is
 called the *branching factor*.
 
-<img src="&#39;media/ch3&#39;/media/image1.png"
+<img src="media/ch3/media/image1.png"
 style="width:6.5in;height:3.9875in"
 alt="A diagram of a computer program Description automatically generated" />
 
@@ -246,7 +246,7 @@ Secondary indexes
 
 OLTP vs OLAP
 
-<img src="&#39;media/ch3&#39;/media/image2.png"
+<img src="media/ch3/media/image2.png"
 style="width:6.5in;height:1.84722in"
 alt="A close-up of a white card Description automatically generated" />
 
@@ -267,7 +267,7 @@ Data warehousing
     the same order. That way we can know that the kth value in column
     file 1 belongs to the same record as that of column 2
 
-<img src="&#39;media/ch3&#39;/media/image3.png"
+<img src="media/ch3/media/image3.png"
 style="width:6.5in;height:2.22361in"
 alt="A screenshot of a computer Description automatically generated" />
 
@@ -280,7 +280,7 @@ Number of distinct values in a column is often lower than number of rows
     for each distinct value, with one bit for each row. The bit is 1 if
     the row has that value, and 0 if not.”
 
-<img src="&#39;media/ch3&#39;/media/image4.png"
+<img src="media/ch3/media/image4.png"
 style="width:4.67135in;height:3.46009in"
 alt="A screenshot of a math test Description automatically generated" />
 

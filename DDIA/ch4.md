@@ -72,11 +72,11 @@ UBJSON, BISON) and xml (WBXML and Fast Infoset)
 
 Example of binary encoding of json using MessagePack
 
-<img src="&#39;media/ch4&#39;/media/image1.png"
+<img src="media/ch4/media/image1.png"
 style="width:5.63889in;height:1.5in"
 alt="A text on a white background Description automatically generated" />
 
-<img src="&#39;media/ch4&#39;/media/image2.png"
+<img src="media/ch4/media/image2.png"
 style="width:6.5in;height:5.45347in"
 alt="A screenshot of a computer Description automatically generated" />
 
@@ -90,11 +90,11 @@ developed at Facebook, and both were made open source in 2007–08
 
 Thrift interface definition language (IDL) example:
 
-<img src="&#39;media/ch4&#39;/media/image3.png"
+<img src="media/ch4/media/image3.png"
 style="width:5.18587in;height:1.43719in"
 alt="A computer code with blue text Description automatically generated" />
 
-<img src="&#39;media/ch4&#39;/media/image4.png"
+<img src="media/ch4/media/image4.png"
 style="width:6.5in;height:1.55278in"
 alt="A white background with black text and blue and orange numbers Description automatically generated" />
 
@@ -104,7 +104,7 @@ that implement the schema in various programming languages \[18\]. Your
 application code can call this generated code to encode or decode
 records of the schema.”
 
-<img src="&#39;media/ch4&#39;/media/image5.png"
+<img src="media/ch4/media/image5.png"
 style="width:6.5in;height:5.15139in"
 alt="A screenshot of a computer Description automatically generated" />
 
@@ -115,13 +115,13 @@ contains the field tag (the number defined in the schema definition)
 **Thrift CompactProtocol** adds additional compression by using variable
 length integers and packing field tag and type into a single byte
 
-<img src="&#39;media/ch4&#39;/media/image6.png"
+<img src="media/ch4/media/image6.png"
 style="width:6.5in;height:4.73403in"
 alt="A screenshot of a computer program Description automatically generated" />
 
 **Protocol Buffers** is very similar to Thrift CompactProtocol
 
-<img src="&#39;media/ch4&#39;/media/image7.png"
+<img src="media/ch4/media/image7.png"
 style="width:6.5in;height:4.33958in"
 alt="A screenshot of a computer program Description automatically generated" />
 
@@ -135,11 +135,11 @@ interestingly different from Protocol Buffers and Thrift. It was started
 in 2009 as a subproject of Hadoop, as a result of Thrift not being a
 good fit for Hadoop’s use cases \[21\].”
 
-<img src="&#39;media/ch4&#39;/media/image8.png"
+<img src="media/ch4/media/image8.png"
 style="width:6.5in;height:3.43819in"
 alt="A computer code with text Description automatically generated with medium confidence" />
 
-<img src="&#39;media/ch4&#39;/media/image9.png"
+<img src="media/ch4/media/image9.png"
 style="width:6.5in;height:4.60833in" />
 
 **Writer’s schema and reader’s schema**
