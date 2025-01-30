@@ -7,11 +7,7 @@ parser.add_argument('path', type=str, help='Path to the docx file')
 args = parser.parse_args()
 path = args.path
 
-print(f"Current directory: {os.getcwd()}")
-
 os.chdir(path)
-
-print(f"Current directory after cd DDIA: {os.getcwd()}")
 
 files = os.listdir('docx_files')
 
@@ -20,15 +16,11 @@ for file in files:
     if file.endswith('.docx'):
         docx_files.append(file[:-5])
 
-print(f'docx files: {docx_files}')
-
 for file in docx_files:
     command = ['pandoc',
     '-t', 'markdown_strict',
     f"--extract-media=media/{file}",
     f'docx_files/{file}.docx',
     '-o', f'{file}.md']
-
-    print(f'command: {command}')
 
     subprocess.run(command, check=True)
