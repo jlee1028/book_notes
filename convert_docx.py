@@ -7,9 +7,11 @@ parser.add_argument('path', type=str, help='Path to the docx file')
 args = parser.parse_args()
 path = args.path
 
+print(f"Current directory: {os.getcwd()}")
+
 os.chdir(path)
 
-print(f"Current directory: {os.getcwd()}")
+print(f"Current directory after cd DDIA: {os.getcwd()}")
 
 files = os.listdir()
 docx_files = []
