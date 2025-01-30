@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - development
+    paths:
+      - "**/*.docx"  # Only trigger when a .docx file is changed
   pull_request:
     branches:
       - development
