@@ -9,6 +9,8 @@ path = args.path
 
 os.chdir(path)
 
+print(f"Current directory: {os.getcwd()}")
+
 files = os.listdir()
 docx_files = []
 for file in files:
