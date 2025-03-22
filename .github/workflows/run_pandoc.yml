@@ -34,7 +34,7 @@ jobs:
           python convert_docx.py ./DDIA
 
       - name: Upload converted files
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: converted-markdown
           path: ./DDIA/*.md
