@@ -45,8 +45,14 @@ jobs:
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
+
+          git fetch origin ${{ github.head_ref || github.ref_name }}  # Ensure we have latest changes
+          git checkout ${{ github.head_ref || github.ref_name }}  # Switch to correct branch
+
           git add .
           git commit -m "Automated conversion of DOCX to Markdown" || echo "No changes to commit"
           
-          BRANCH_NAME=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}
-          git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git HEAD:$BRANCH_NAME
+          # Push safely (rebase if needed)
+          git pull --rebase origin ${{ github.head_ref || github.ref_name }} || true
+          git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git HEAD:${{ github.head_ref || github.ref_name }}
+          
